@@ -1,0 +1,107 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+
+.logo__title {
+    @include title ($fsz: 3.2rem, $lh: 1.1);
+    color: $color-primary;
+}
+
+.content__title {
+    max-width: 310px;
+    @include title ($fsz: 4.4rem, $ls: 0);
+    color: $color-ligth;
+    @include media-tablet {
+        @include title ($fsz: 2.5rem);
+        color: $color-ligth;
+        max-width: 260px;
+    }
+}
+
+/* main */
+.about__title {
+    max-width: 370px;
+    @include title;
+    @include media-tablet {
+        font-size: 2.5rem;
+        text-align: center;
+        max-width: 260px;
+    }
+}
+
+.pets__title {
+    max-width: 400px;
+    align-self: center;
+    text-align: center;
+    @include title;
+}
+
+.help__title {
+    max-width: 310px;
+    text-align: center;
+    @include title;
+    @include media-tablet {
+        font-size: 2.5rem;
+        text-align: center;
+        max-width: 260px;
+    }
+}
+
+.list__item_title {
+    margin-top: 30px;
+    text-align: center;
+    @include title ($fsz: 2.2rem, $lh: 1.15);
+    @include media-desktop {
+        @include title ($fsz: 2rem, $lh: 1.15);
+    }
+    @include media-tablet {
+        margin-top: 20px;
+        @include title ($fsz: 1.5rem, $lh: 1.1);
+    }
+
+}
+
+.description {
+    &__title {
+    max-width: 300px;
+    @include title;
+    @include media-tablet {
+        font-size: 2.5rem;
+        text-align: center;
+        max-width: 240px;
+    }
+    }
+    &__subtitle {
+        padding: 20px 0;
+        @include title ($fsz: 1.5rem, $lh: 1.1);
+        @include media-tablet {
+            letter-spacing: 0;
+        }
+    }
+    &__card_text {
+        padding-left: 15px;
+        @include title ($fsz: 2rem, $lh: 1.15);
+        @include media-tablet {
+            @include title ($fsz: 1.5rem, $ls: 0);
+        }
+    }
+
+}
+
+/* Footer */
+.footer {
+    &__title {
+    @include title;
+    color: $color-ligth;
+    @include media-tablet {
+        font-size: 2.5rem;
+    }
+    }
+    &__subtitle {
+        padding-left: 20px;
+        @include title ($fsz: 2rem, $lh: 1.15);
+        color: $color-primary;
+    }
+}

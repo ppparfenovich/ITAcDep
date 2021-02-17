@@ -1,0 +1,73 @@
+.footer {
+    // max-width: 1280px;
+    // margin: 0 auto;
+    padding-top: 40px;
+    background: url(./../../img/start-screen-gradient-background.jpg);
+    background-size: cover;
+    @include media-desktop {
+        padding-top: 30px;
+    }
+    @include media-tablet {
+        padding-top: 0;
+    }
+
+    &__row {
+        @include flex;
+        @include media-desktop {
+            @include flex ($jc: center, $ai: start);
+        }
+        @include media-tablet {
+            & > * {
+                margin: 40px 0 0 0;
+            }
+            text-align: center;
+        }
+    }
+}
+
+.contact {
+    max-width: 280px;
+    @include flex ($fdir: column);
+}
+
+.email__wrapper {
+    padding-top: 40px;
+    @include flex;
+}
+.footer__icon {
+    max-width: 40px;
+}
+
+.phone__wrapper {
+    padding-top: 40px;
+    @include flex;
+}
+.footer__link {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: $color-primary;
+}
+.adress {
+    max-width: 302px;
+    @include flex ($ai: start, $fdir: column);
+    &__description {
+        padding-top: 34px;
+        @include flex ($fw: no wrap);
+    }
+    @include media-desktop {
+        margin: 0 0 65px 60px;
+    }
+    @include media-tablet {
+        margin: 40px 0 0;
+    }
+}
+
+.london {
+    padding-top: 32px;
+}
+.adress__icon {
+    display: block;
+}
+
+.footer__image_wrapper {
+    max-width: 300px;
+}

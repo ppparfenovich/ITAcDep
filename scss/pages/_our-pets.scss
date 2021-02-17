@@ -1,0 +1,52 @@
+.our-pets {
+    .logo__title {
+        color: $color-card-name;
+    }
+
+    .logo__subtitle {
+        color: $color-pBtn-text;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #000;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    }
+
+    .nav__list_link {
+        color: $color-card-name;
+        &:hover {
+            color: $color-pBtn-text;
+            border-bottom: 3px solid $color-primary;
+        }
+    }
+
+    .slider {
+        max-width: 1200px;
+        max-height: 1300px;
+        overflow: hidden;
+        @include flex;
+        @include media-tablet {
+            @include flex ($jc: center);
+        }
+    }
+
+    .pets-nav {
+        width: 340px;
+        @include flex;
+    }
+
+    .burger__line {
+        border-top: 2px solid #000;
+        &::before {
+            border-top: 2px solid #000;
+        }
+        &::after {
+            border-top: 2px solid #000;
+        }
+    }
+    &.burger_active {
+        overflow: hidden;
+
+        & .nav {
+            background-color: $color-ligth;
+        }
+    }
+}

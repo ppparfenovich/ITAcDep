@@ -1,0 +1,63 @@
+button {
+    @include title($fsz: 1.7rem);
+    &:focus {
+        outline: none;
+    }
+}
+
+.button__primary {
+    padding: 15px 45px;
+    border: none;
+    border-radius: 100px;
+    align-self: center;
+    background: $color-primary;
+    color: $color-pBtn-text;
+    &:hover {
+        cursor: pointer;
+        background: $color-hover;
+    }
+}
+
+.button__secondary {
+    padding: 15px 45px;
+    // outline: none;
+    border: 2px solid $color-primary;
+    border-radius: 100px;
+    background: $color-bg-secondary;
+    &:hover {
+        cursor: pointer;
+        background: $color-hover;
+    }
+}
+
+.button_arrow {
+    width: 52px;
+    height: 52px;
+    @include flex($jc: center);
+    border: 2px solid $color-primary;
+    border-radius: 100px;
+    &:hover {
+        cursor: pointer;
+        background: $color-hover;
+        border: none;
+    }
+}
+
+.our-pets {
+    .pets-nav__button {
+        width: 52px;
+        height: 52px;
+        @include flex($jc: center);
+        border: 2px solid $color-head-text;
+        border-radius: 100px;
+        &:hover {
+            cursor: pointer;
+            background: $color-hover;
+            border: none;
+        }
+    }
+    .number {
+        background: $color-primary;
+        border: 2px solid $color-primary;
+    }
+}

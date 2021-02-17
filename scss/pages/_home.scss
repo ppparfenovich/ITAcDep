@@ -1,0 +1,137 @@
+
+/* About */
+.about__col {
+    max-width: 850px;
+    margin: 0 auto;
+    @include flex;
+    @include media-desktop {
+        @include flex ($fdir: column-reverse);
+    }
+}
+
+.about-image__wrapper {
+    max-width: 300px;
+}
+
+.about {
+    max-width: 430px;
+    &__text {
+        margin: 0;
+        padding-top: 25px;
+        @include text;
+        color: $color-about-text;
+    }
+    @include media-desktop {
+        margin-bottom: 80px;
+        @include flex ($fdir: column);
+    }
+}
+/* //About */
+
+/* Pets */
+.pets-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: $color-bg-primary;
+    // display: none;
+}
+.pets {
+    @include flex ($fdir: column);
+    &__slider {
+        padding: 60px 0;
+        @include flex ($fw: nowrap);
+        flex-grow: 1;
+    }
+}
+
+.slider {
+    max-width: 990px;
+    @include flex ($fw: nowrap);
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.card {
+    max-width: 270px;
+    padding-bottom: 30px;
+    @include flex ($fdir: column);
+    background: $color-bg-secondary;
+    border-radius: 9px;
+    &__name {
+        padding: 30px 0;
+        @include title ($fsz: 2rem, $lh: 1.15);
+        color: $color-card-name;
+    }
+}
+
+/* //Pets */
+
+/* Help */
+.help {
+    @include flex ($fdir: column);
+}
+
+.list {
+    padding-top: 5px;
+    @include flex ($jc: center);
+    @include media-tablet {
+        @include flex;
+    }
+    &__item {
+        padding: 55px 60px 0;
+        @include flex ($fdir: column);
+        /*column-gap: 60px;*/
+        @include media-desktop {
+            padding: 55px 30px 0;
+        }
+        @include media-tablet {
+            padding: 30px 15px 0;
+        }
+    }
+}
+/* //Help */
+
+/* Donation */
+.donation {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: $color-bg-primary;
+    &__col {
+        max-width: 915px;
+        margin: 0 auto;
+        @include flex;
+        @include media-desktop {
+            @include flex ($fdir: column-reverse);
+        }
+    }
+    &__image_wrapper {
+        max-width: 535;
+    }
+    &__image {
+        width: 100%;
+    }
+    
+}
+
+.description {
+    max-width: 380px;
+    &__card {
+        padding: 10px 15px;
+        display: flex;
+        background: $color-primary;
+        border-radius: 9px;
+    }
+    &__text {
+        padding-top: 20px;
+        @include text ($fst: italic, $fsz: 1.2rem, $lh: 1.5);
+        color: $color-descr-text;
+    }
+    @include media-desktop {
+        margin-bottom: 60px;
+    }
+    @include media-tablet {
+        @include flex ($fdir: column);
+    }
+
+}
+/* //Donation */

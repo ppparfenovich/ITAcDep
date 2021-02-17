@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Shelter</title>
+</head>
+<body class="body">
+    <div class="startScreen">
+        <div class="container">
+            <header class="header">
+                <div class="header__row">
+                    <div class="logo">
+                        <h1 class="logo__title">Cozy House</h1>
+                        <div class="logo__subtitle">Shelter for pets in Boston</div>
+                    </div>
+                    <div class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__list_item">
+                                <a class="nav__list_link" href="#">About the shelter</a>
+                            </li>
+                            <li class="nav__list_item">
+                                <a class="nav__list_link" href="./our-pets.html">Our pets</a>
+                            </li>
+                            <li class="nav__list_item">
+                                <a class="nav__list_link" href="#">Help the shelter</a>
+                            </li>
+                            <li class="nav__list_item">
+                                <a class="nav__list_link" href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="burger">
+                        <div class="burger__line"></div>
+                    </div>
+                </div>
+            </header>
+            <div class="content__row">
+                <div class="content">
+                    <h2 class="content__title">Not only people need a house</h2>
+                    <div class="content__text">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</div>
+                    <button class="button__primary">Make a friend</button>
+                </div>
+                <div class="start-img__wrapper">
+                    <img class="start-img" src="./img/start-screen-puppy.svg" alt="Puppy" title="Puppy">
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="main">
+        <article class="about-content">
+            <div class="container">
+                <div class="container__row">
+                    <div class="about__col">
+                        <div class="about-image__wrapper">
+                            <img class="about-image" src="./img/about-pets.jpg" alt="Dog and cat" title="Dog and cat">
+                        </div>
+                        <div class="about">
+                            <h3 class="about__title">
+                                About the shelter “Cozy House”
+                            </h3>
+                            <p class="about__text">
+                                Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.
+                            </p>
+                            <p class="about__text">
+                                We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="pets-content">
+            <div class="container">
+                <div class="container__row pets">
+                    <h3 class="pets__title">Our friends who<br> are looking for a house</h3>
+                    <div class="pets__slider">
+                        <button class="button_arrow">
+                            <img src="./img/icons/arrow-left.svg" alt="Arrow left" title="Arrow left">
+                        </button>
+                        <div class="slider">
+                            <div class="card">
+                                <div class="card__image_wrapper">
+                                    <img class="card__image" src="./img/pets-katrine.jpg" alt="Cat Katrine" title="Cat Katrine">
+                                </div>
+                                <span class="card__name">Katrine</span>
+                                <button class="button__secondary button__modal" data-modal-button="modal-1" type="button">learn more</button>
+                                <div class="modal-window">
+                                    <div class="modal-card">
+                                        <div class="modal-card__image-wrapper">
+                                            <img class="modal-card__image" src="./img/pets-katrine.jpg" alt="Cat Katrine" title="Cat Katrine">
+                                        </div>
+                                        <div class="modal">
+                                            <div class="modal__title">Katrine</div>
+                                            <div class="modal__subtitle">Cat - British Shorthair</div>
+                                            <p class="modal__description">Katrine is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations.</p>
+                                            <ul class="modal__list">
+                                                <li class="modal__list_item"><b>Age:</b> undefined</li>
+                                                <li class="modal__list_item"><b>Inoculations:</b> none</li>
+                                                <li class="modal__list_item"><b>Diseases:</b> none</li>
+                                                <li class="modal__list_item"><b>Parasites:</b> none</li>
+                                            </ul>
+                                        </div>
+                                        <button data-modal-close type="button" class="btn btn-dark">
+                                            <img src="./img/icons/cross.svg" alt="Cross" title="Cross">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__image_wrapper">
+                                    <img class="card__image" src="./img/pets-jennifer.jpg" alt="Dog Janifer" title="Dog Janifer">
+                                </div>
+                                <span class="card__name">Jennifer</span>
+                                <button class="button__secondary button__modal">learn more</button>
+                                <div class="modal-window">
+                                    <div class="modal-card">
+                                        <div class="modal-card__image-wrapper">
+                                            <img class="modal-card__image" src="./img/pets-jennifer.jpg" alt="Dog Janifer" title="Dog Janifer">
+                                        </div>
+                                        <div class="modal">
+                                            <div class="modal__title">Janifer</div>
+                                            <div class="modal__subtitle">Dog - Labrador</div>
+                                            <p class="modal__description">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+                                            <ul class="modal__list">
+                                                <li class="modal__list_item"><b>Age:</b> 2 months old</li>
+                                                <li class="modal__list_item"><b>Inoculations:</b> none</li>
+                                                <li class="modal__list_item"><b>Diseases:</b> none</li>
+                                                <li class="modal__list_item"><b>Parasites:</b> none</li>
+                                            </ul>
+                                        </div>
+                                        <button data-modal-close type="button" class="btn btn-dark">
+                                            <img src="./img/icons/cross.svg" alt="Cross" title="Cross">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__image_wrapper">
+                                    <img class="card__image" src="./img/pets-woody.jpg" alt="Dog Woody" title="Dog Woody">
+                                </div>
+                                <span class="card__name">Woody</span>
+                                <button class="button__secondary button__modal">learn more</button>
+                                <div class="modal-window">
+                                    <div class="modal-card">
+                                        <div class="modal-card__image-wrapper">
+                                            <img class="modal-card__image" src="./img/pets-woody.jpg" alt="Dog Woody" title="Dog Woody">
+                                        </div>
+                                        <div class="modal">
+                                            <div class="modal__title">Woody</div>
+                                            <div class="modal__subtitle">Dog - Golden Retriever</div>
+                                            <p class="modal__description">Woody is a handsome 3 1/2 year old boy. Woody does know basic commands and is a smart pup. Since he is on the stronger side, he will learn a lot from your training. Woody will be happier when he finds a new family that can spend a lot of time with him.</p>
+                                            <ul class="modal__list">
+                                                <li class="modal__list_item"><b>Age:</b> 3 1/2 year old</li>
+                                                <li class="modal__list_item"><b>Inoculations:</b> none</li>
+                                                <li class="modal__list_item"><b>Diseases:</b> none</li>
+                                                <li class="modal__list_item"><b>Parasites:</b> none</li>
+                                            </ul>
+                                        </div>
+                                        <button data-modal-close type="button" class="btn btn-dark">
+                                            <img src="./img/icons/cross.svg" alt="Cross" title="Cross">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button_arrow">
+                            <img src="./img/icons/arrow-right.svg" alt="Arrow right" title="Arrow right">
+                        </button>
+                    </div>
+                    <button class="button__primary">Get to know the rest</button>
+                </div>
+            </div>
+        </article>
+        <article class="help-content">
+            <div class="container">
+                <div class="container__row help">
+                    <h3 class="help__title">
+                        How you can help our shelter
+                    </h3>
+                    <div class="list">
+                        <div class="list__item">
+                            <img class="list__item_img" src="./img/icons/icon-pet-food.svg" alt="Pet food" title="Pet food">
+                            <h4 class="list__item_title">Pet food</h4>
+                        </div>
+                        <div class="list__item">
+                            <img class="list__item_img" src="./img/icons/icon-transportation.svg" alt="Pet Transportation" title="Pet Transportation">
+                            <h4 class="list__item_title">Transportation</h4>
+                        </div>
+                        <div class="list__item">
+                            <img class="list__item_img" src="./img/icons/icon-toys.svg" alt="Pet Toys" title="Pet Toys">
+                            <h4 class="list__item_title">Toys</h4>
+                        </div>
+                        <div class="list__item">
+                            <img class="list__item_img" src="./img/icons/icon-bowls-and-cups.svg" alt="Pet Bowls and cups" title="Pet Bowls and cups">
+                            <h4 class="list__item_title">Bowls and cups</h4>
+                        </div>
+                        <div class="list__item">
+                            <img class="list__item_img" src="./img/icons/icon-shampoos.svg" alt="Pet Shampoos" title="Pet Shampoos">
+                            <h4 class="list__item_title">Shampoos</h4>
+                        </div>
+                        <div class="list__item">
+                            <img class="list__item_img" src="./img/icons/icon-vitamins.svg" alt="Pet Vitamins" title="Pet Vitamins">
+                            <h4 class="list__item_title">Vitamins</h4>
+                        </div>
+                        <div class="list__item">
+                            <img class="list__item_img" src="./img/icons/icon-medicines.svg" alt="Pet Medicines" title="Pet Medicines">
+                            <h4 class="list__item_title">Medicines</h4>
+                        </div>
+                        <div class="list__item">
+                            <img class="list__item_img" src="./img/icons/icon-collars-leashes.svg" alt="Pet Collars" title="Pet Collars">
+                            <h4 class="list__item_title">Collars / leashes</h4>
+                        </div>
+                        <div class="list__item">
+                            <img class="list__item_img" src="./img/icons/icon-sleeping-area.svg" alt="Pet Sleeping areas" title="Pet Sleeping areas">
+                            <h4 class="list__item_title">Sleeping areas</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="donation">
+            <div class="container">
+                <div class="container__row">
+                    <div class="donation__col">
+                        <div class="donation__image_wrapper">
+                            <img class="donation__image" src="./img/donation-dog.svg" alt="Donation dog" title="Donation dog">
+                        </div>
+                        <div class="description">
+                            <h3 class="description__title">
+                                You can also make a donation
+                            </h3>
+                            <h5 class="description__subtitle">
+                                Name of the bank / Type of bank account
+                            </h5>
+                            <div class="description__card">
+                                <img class="description__card_img" src="./img/icons/credit-card.svg" alt="card image" title="card image">
+                                <h4 class="description__card_text">
+                                    8380 2880 8028 8791 7435
+                                </h4>
+                            </div>
+                            <div class="description__text">
+                                Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="contact">
+                    <h3 class="footer__title">For questions and suggestions</h3>
+                    <div class="email__wrapper">
+                        <img class="footer__icon" src="./img/icons/icon-email.svg" alt="email icon" title="email icon">
+                        <h4 class="footer__subtitle">
+                            <a href="mailto:email@shelter.com" class="footer__link" title="email">email@shelter.com</a>
+                        </h4>
+                    </div>
+                    <div class="phone__wrapper">
+                        <img class="footer__icon" src="./img/icons/icon-phone.svg" alt="phone icon" title="phone icon">
+                        <h4 class="footer__subtitle">
+                            <a href="tel:+136745677554" class="footer__link" title="Telephone">+13 674 567 75 54</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="adress">
+                    <h3 class="footer__title">We are waiting for your visit</h3>
+                    <div class="adress__description">
+                        <img class="adress__icon" src="./img/icons/icon-marker.svg" alt="Adress icon" title="Adress icon">
+                        <h4 class="footer__subtitle">
+                            1 Central Street, Boston (entrance from the store)
+                        </h4>
+                    </div>
+                    <div class="adress__description london">
+                        <img class="adress__icon" src="./img/icons/icon-marker.svg" alt="Adress icon" title="Adress icon">
+                        <h4 class="footer__subtitle">
+                            18 South Park, London 
+                        </h4>
+                    </div>
+                </div>
+                <div class="footer__image_wrapper">
+                    <img  class="footer__image" src="./img/footer-puppy.svg" alt="Puppy" title="Puppy">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+

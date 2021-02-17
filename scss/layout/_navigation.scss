@@ -1,0 +1,96 @@
+
+.nav {
+    &__list {
+        width: 443px;
+        @include flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        &_link {
+            @include text;
+            color: $color-head-text;
+            &:hover {
+                color: $color-bg-secondary;
+                border-bottom: 3px solid $color-primary;
+            }
+        }
+    }
+    @include media-tablet {
+        display: none;
+    }
+}
+
+.burger {
+    display: none;
+    padding-right: 30px;
+    transition: all 0.3s ease-out;
+    &__line {
+        position: relative;
+        width: 30px;
+        border-top: 2px solid $color-primary;
+        &::before {
+            position: absolute;
+            content: "";
+            top: -14px;
+            width: 30px;
+            border-top: 2px solid $color-primary;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            top: 10px;
+            width: 30px;
+            border-top: 2px solid $color-primary;
+        }
+    }
+    @include media-tablet {
+        display: block;
+    }
+    // & .burger-active {
+    //     transform: rotate(45deg);
+    // }
+}
+
+.burger_active {
+    &.body {
+        overflow: hidden;
+    }
+    & .header__row {
+        position: relative;
+    }
+    & .logo {
+        z-index: 100;
+    }
+    & .burger {
+        padding-right: 0;
+        transform: translateX(-100%) rotate(90deg);
+        z-index: 100;
+    }
+    & .nav {
+        @include flex($jc: center, $fdir: column);
+        // width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $color-pBtn-text;
+        z-index: 10;
+        transition: all 0.4s ease-out;
+        &__list {
+            width: 100%;
+            position: fixed;
+            top: 215px;
+            @include flex($jc: center, $fdir: column);
+            &_item {
+                margin: 20px 0;
+                line-height: 1;
+            }
+            &_link {
+                font-size: 3.2rem;
+            }
+        }
+
+    }
+}

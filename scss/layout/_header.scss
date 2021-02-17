@@ -1,0 +1,60 @@
+.startScreen {
+    // max-width: 1280px;
+    // margin: 0 auto;
+    background: url(./../../img/start-screen-gradient-background.jpg);
+    background-size: cover;
+}
+
+.header {
+    padding: 60px 0;
+    &__our-pets {
+        padding: 30px 0;
+    }
+    @include media-desktop {
+        padding: 30px 0;
+    }
+}
+
+.header__row,
+.content__row {
+    @include flex($fw: nowrap);
+}
+
+.content__row {
+    @include media-desktop {
+        @include flex ($jc: center, $ai: start);
+    }
+}
+
+.logo__subtitle {
+    margin-top: 10px;
+    text-align: center;
+    @include text ($fsz: 1.3rem, $lh: auto);
+    letter-spacing: 0.1em;
+    color: $color-ligth;
+}
+
+.content {
+    max-width: 460px;
+    margin-top: 163px;
+    &__text {
+        padding: 42px 0;
+        @include text;
+        color: $color-head-text;
+    }
+    @include media-desktop {
+        margin: 30px 0 100px;
+    }
+    @include media-tablet {
+        @include flex ($fdir: column);
+        text-align: center;
+    }
+}
+
+.start-img__wrapper {
+    max-width: 698px;
+}
+
+.start-img {
+    width: 100%;
+}
