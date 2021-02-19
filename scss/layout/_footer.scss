@@ -1,9 +1,6 @@
 .footer {
-    // max-width: 1280px;
-    // margin: 0 auto;
     padding-top: 40px;
-    background: url(./../../img/start-screen-gradient-background.jpg);
-    background-size: cover;
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
     @include media-desktop {
         padding-top: 30px;
     }

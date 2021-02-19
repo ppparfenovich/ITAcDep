@@ -47,14 +47,15 @@
 .slider {
     max-width: 990px;
     @include flex ($fw: nowrap);
-    flex-grow: 1;
+    // flex-grow: 1;
     overflow: hidden;
 }
 
 .card {
-    max-width: 270px;
+    width: calc(100%/3);
     padding-bottom: 30px;
     @include flex ($fdir: column);
+    flex-shrink: 0;
     background: $color-bg-secondary;
     border-radius: 9px;
     &__name {
@@ -62,6 +63,8 @@
         @include title ($fsz: 2rem, $lh: 1.15);
         color: $color-card-name;
     }
+    // @include media-tablet {
+    // }
 }
 
 /* //Pets */

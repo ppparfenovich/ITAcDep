@@ -448,28 +448,9 @@ button:focus {
 }
 
 .modal-window {
-  position: fixed;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -500%);
-          transform: translate(-50%, -500%);
   opacity: 0;
   -webkit-transition: 0.25s ease-out;
   transition: 0.25s ease-out;
-}
-
-.modal-window.modal_active {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(41, 41, 41, 0.6);
-  z-index: 10;
-  opacity: 1;
-  -webkit-transform: translate(0%, 0%);
-          transform: translate(0%, 0%);
 }
 
 .modal-window .modal-card {
@@ -492,8 +473,8 @@ button:focus {
       flex-wrap: wrap;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -500%);
+          transform: translate(-50%, -500%);
   background-color: #fafafa;
   border-radius: 9px;
   z-index: 100;
@@ -585,6 +566,22 @@ button:focus {
       flex-wrap: wrap;
   border: 2px solid #F1CDB3;
   border-radius: 100px;
+}
+
+.modal_active.modal-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 41, 41, 0.6);
+  z-index: 10;
+  opacity: 1;
+}
+
+.modal_active.modal-window .modal-card {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -965,8 +962,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .startScreen {
-  background: url(./../../img/start-screen-gradient-background.jpg);
-  background-size: cover;
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
 .header {
@@ -1086,8 +1082,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer {
   padding-top: 40px;
-  background: url(./../../img/start-screen-gradient-background.jpg);
-  background-size: cover;
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
 @media (max-width: 970px) {
@@ -1424,14 +1419,11 @@ h1, h2, h3, h4, h5, h6 {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   overflow: hidden;
 }
 
 .card {
-  max-width: 270px;
+  width: calc(100%/3);
   padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1448,6 +1440,8 @@ h1, h2, h3, h4, h5, h6 {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   background: #fafafa;
   border-radius: 9px;
 }
